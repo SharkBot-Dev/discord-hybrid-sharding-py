@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "discord-hybrid-sharding"
+version = "3.0.1"
+description = "Process and internal shard orchestration for Python Discord bots"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "discord-hybrid-sharding contributors" }]
+keywords = ["discord", "sharding", "clustering", "discord.py"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["discord_hybrid_sharding*"]
